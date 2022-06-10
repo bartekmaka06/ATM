@@ -90,7 +90,6 @@ public class ATMachine {
                 result.add(BanknotesPack.create(requiredBanknotesCount, banknote));
             }
         }
-
         if (valueToWithdraw > 0) {
             throw new ATMOperationException(ErrorCode.WRONG_AMOUNT);
         }
